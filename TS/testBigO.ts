@@ -1,0 +1,19 @@
+function sum_char_codes(n:string):number{
+    let sum=0;
+    for (let i=0 ; i< n.length ; ++i){
+        for (let j=0;j<n.length;++j){
+            const chartCode = n.charCodeAt(j);
+            if(chartCode===69){
+                return sum;
+            }
+            sum += chartCode;
+        
+        }
+    
+    }
+return sum;
+}
+
+
+
+console.log(sum_char_codes("ddE"))
